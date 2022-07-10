@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@drawable/shape_dialog"
+    android:layout_width="match_parent"
+android:orientation="vertical"
+
+    android:layout_height="@dimen/_180sdp">
+
+    <ImageView
+        android:layout_width="@dimen/_45sdp"
+        android:src="@drawable/off"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_centerHorizontal="true"
+        app:tint="@color/black"
+        android:layout_height="@dimen/_45sdp"/>
+<TextView
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textSize="@dimen/_15sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:fontFamily="@font/spartan_bold"
+    android:layout_height="wrap_content"
+        android:text="Are you sure? \n Logout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/noBtn"
+            android:layout_width="@dimen/_100sdp"
+            android:text="NO"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/spartan_bold"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:gravity="center"
+            android:background="@drawable/shape_dialog"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:text="YES"
+            android:id="@+id/yesBtn"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/spartan_bold"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

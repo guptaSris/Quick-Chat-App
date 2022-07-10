@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Create Account"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/spartan_bold"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:id="@+id/profile_image"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/profile" />
+        <EditText
+            android:hint="Name"
+            android:background="@drawable/edittext_shape"
+            android:backgroundTint="#E3E0E0"
+            android:id="@+id/reg_name"
+            android:textColorHint="@color/black"
+            android:textColorHighlight="@color/black"
+            android:fontFamily="@font/spartan_regular"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:textSize="@dimen/_20sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Email"
+            android:backgroundTint="#E3E0E0"
+            android:id="@+id/reg_email"
+            android:textColorHint="@color/black"
+            android:textColorHighlight="@color/black"
+            android:background="@drawable/edittext_shape"
+            android:fontFamily="@font/spartan_regular"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/_20sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:hint="Password"
+            android:background="@drawable/edittext_shape"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/spartan_regular"
+            android:layout_width="match_parent"
+            android:backgroundTint="#E3E0E0"
+            android:id="@+id/reg_pass"
+            android:textColorHint="@color/black"
+            android:textColorHighlight="@color/black"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Confirm Password"
+            android:layout_marginTop="10dp"
+            android:id="@+id/reg_cPass"
+            android:background="@drawable/edittext_shape"
+            android:fontFamily="@font/spartan_regular"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:backgroundTint="#E3E0E0"
+            android:textColorHint="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textSize="@dimen/_20sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Sign Up"
+            android:textSize="@dimen/_20sdp"
+            android:id="@+id/btn_SignUp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/spartan_bold"
+            android:background="@drawable/signin_shape"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/txt_signin"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/spartan_bold"
+            android:textColor="@color/primary_purple"
+            android:text="i'm already a user.Sign In" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
